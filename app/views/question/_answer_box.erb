@@ -1,9 +1,21 @@
+<div class="input-field
 <form action="/questions" method="post">
 <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 <input name="question_id" value="<%= @question_id %>" type="hidden">
-<textarea name="answer_text"></textarea>
-<input type="submit" value="submit">
-</form>
+<textarea class="materialize-textarea" placeholder="Your code here!" name="answer_text"></textarea>
+ <button class="btn waves-effect waves-light" type="submit" name="action"><i>Submit</i>
+	</button></form>
 
-<button id="hint">Show Hint</button>
-<button id="show_answer">Show Answer</button>
+<button class="btn waves-effect waves-light green pull-right" id="show_hint">Show Hint</button>
+<button class="btn waves-effect waves-light green  pull-right" id="show_answer">Show Answer</button>
+</div>
+<script>
+	$( document ).ready(function() {
+	$( "#show_hint" ).click(function() {
+	$( ".hint" ).css("visibility", "visible");
+	});
+	$( "#show_answer" ).click(function() {
+	$( ".answer" ).css("visibility", "visible");
+	});
+	});
+	</script>

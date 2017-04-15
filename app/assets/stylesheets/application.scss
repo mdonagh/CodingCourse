@@ -1,0 +1,54 @@
+/*
+ * This is a manifest file that'll be compiled into application.scss, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "materialize/components/color";
+$primary-color: color("blue", "lighten-2") !default;
+$secondary-color: color("yellow", "base") !default;
+@import 'materialize';
+
+.code_block {
+	padding: 0px 0px 10px 30px;
+    border: solid 1px rgba(51,51,51,0.12);
+    background: #f5f2f0;
+        font-family: 'Inconsolata', Monaco, Consolas, 'Andale Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.4;
+}
+.spacer {
+	margin-left:20px;
+}
+
+.hint {
+    padding: 20px;
+    background-color: #2196F3; /* Blue */
+    color: white;
+    margin-bottom: 15px;
+    visibility:hidden;
+}
+.answer {
+    visibility:hidden;
+    background-color: #EE82EE; /* Purple */
+    color: white;
+    margin-bottom: 15px;
+    visibility:hidden;
+    font-size: 200%;
+}
+.pull-right {
+    float:right !important;
+}
