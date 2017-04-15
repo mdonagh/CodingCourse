@@ -6,13 +6,13 @@ console.log(i);
 </div>
 <strong>What will this print?</strong>
 
-<div class="hint">
+<div class="hint" <% if @show_answer %>style="visibility:visible;"<% end %> >
 i starts off set to zero, and will increase by one each time the loop is run. 
 It will run until i < 10 is false, so that means 
 at i = 10
 10 < 10 = FALSE
 </div>
-<div class="answer">
+<div class="answer" <% if @show_answer %>style="visibility:visible;"<% end %> >
 0,1,2,3,4,5,6,7,8,9
 </div>
 

@@ -17,13 +17,13 @@ OldEnoughtoDrive(80);
 
 <strong>What will this print?</strong>
 
-<div class="hint">
+<div class="hint" <% if @show_answer %>style="visibility:visible;"<% end %> >
 The function OldEnoughToDrive is invoked three times with different parameters. 
 It looks like the function prints "true" if the parameter is greater than 18
 and "false" if it's less than 18
 </div>
 
-<div class="answer">
+<div class="answer" <% if @show_answer %>style="visibility:visible;"<% end %> >
 "false", "true", "true"
 </div>
 

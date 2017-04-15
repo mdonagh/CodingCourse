@@ -7,12 +7,12 @@ for(var iterator = -10; iterator < 0; iterator++)
 
 <strong>What will this print?</strong>
 
-<div class="hint">
+<div class="hint" <% if @show_answer %>style="visibility:visible;"<% end %> >
 iterator starts off set to -10, and will increase by one each time the loop is run. 
 It will run until i < 0 is false
 </div>
 
-<div class="answer">
+<div class="answer" <% if @show_answer %>style="visibility:visible;"<% end %> >
 -10, -9, -8, -7, -6, -5, -4, -3, -2, -1
 </div>
 

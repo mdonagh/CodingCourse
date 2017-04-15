@@ -2,6 +2,7 @@ class QuestionController < ApplicationController
 	
 	def show
 		@question_id = params[:id]
+		@show_answer = false
 	end
 
 	def answer

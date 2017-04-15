@@ -7,14 +7,14 @@ console.log(i);
 
 <strong>What will this print?</strong>
 
-<div class="hint">
+<div class="hint" <% if @show_answer %>style="visibility:visible;"<% end %> >
 i starts off set to 3, and will decrease by one each time the loop is run. 
 It will run until i > 10 is false, so that means 
 at i = 0
 0 < 0 = FALSE
 It will stop running at 0
 </div>
-<div class="answer">
+<div class="answer" <% if @show_answer %>style="visibility:visible;"<% end %> >
 3,2,1
 </div>
 

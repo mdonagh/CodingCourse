@@ -8,13 +8,13 @@ console.log(i + a);
 </div>
 <p>What will this print?</p>
 
-<div class="hint">
+<div class="hint" <% if @show_answer %>style="visibility:visible;"<% end %> >
 i starts off set to 0, and will increase by one each time the loop is run. 
 It will run until i < 3 is false
 a is initialized to 2, so each time the loop runs it will print the 2+i
 </div>
 
-<div class="answer">
+<div class="answer" <% if @show_answer %>style="visibility:visible;"<% end %> >
 2,3,4
 </div>
 
