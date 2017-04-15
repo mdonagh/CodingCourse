@@ -1,0 +1,9 @@
+<form action="/questions" method="post">
+<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+<input name="question_id" value="<%= @question_id %>" type="hidden">
+<textarea name="answer_text"></textarea>
+<input type="submit" value="submit">
+</form>
+
+<button id="hint">Show Hint</button>
+<button id="show_answer">Show Answer</button>

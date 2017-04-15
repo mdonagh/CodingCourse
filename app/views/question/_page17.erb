@@ -1,0 +1,29 @@
+The AND operator && means that the conditions on both sides of the AND operator need to be true for the whole statement to evaluate to true. 
+
+function OldEnoughToDrive(age)
+{
+	if(age > 18 && age < 70)
+	{
+	console.log(“true”);
+	}
+	else
+	{
+	console.log(“FALSE!”);
+	}
+}
+OldEnoughtoDrive(80);
+OldEnoughtoDrive(65);
+OldEnoughtoDrive(15);
+
+What will this print?
+
+<div class="hint">
+The function OldEnoughToDrive is invoked three times with different parameters. 
+It looks like the function prints "true" if the parameter is greater than 18 AND less than 70
+</div>
+
+<div class="answer">
+"false", "false", "false"
+</div>
+
+<%= render "answer_box" %>
