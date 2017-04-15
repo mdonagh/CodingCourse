@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   get '/question/:id' => 'question#show'
   post '/questions' => 'question#answer'
+
+  root :to => "question#show", :id => '1'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
