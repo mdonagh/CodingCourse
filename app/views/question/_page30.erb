@@ -1,0 +1,27 @@
+<h3>Reminder about functions</h3>
+
+<p>Code is almost always wrapped up as functions with names that describe what they do. This makes code reusable so that you don’t have repeat yourself, organizes your code, and makes your code easier to understand for other people.</p>
+
+<div class="code_block">
+Remember, a function looks like this in Javascript:
+
+function MyFunction(parameter)
+{
+return parameter;
+}
+</div>
+
+<p>A parameter is something that is “passed into” a function. It’s a way of making variables from outside that function accessible within the function. Parameters are not required.</p>
+
+<div class="code_block">
+var x = multiply(4, 3);      // Function is called, return value will end up in x
+
+function multiply(a, b) {
+    return a * b;                // Function returns the product of a and b
+}
+console.log(x) // prints 12
+</div>
+
+<p>If a return comes before the end of the function, then the function will stop running.</p>
+
+<p>The main use of return values is to perform some calculation, and then return it so that you can save it to another variable.</p>
