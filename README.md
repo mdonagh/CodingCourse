@@ -1,5 +1,3 @@
-== README
-
 This is a Ruby on Rails application designed to provide a free and comprehensive introduction to coding. 
 
 Made using:
