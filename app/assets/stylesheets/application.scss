@@ -55,3 +55,8 @@ $secondary-color: color("yellow", "base") !default;
 form.signup_form {
     width: 600px;
 }
+
+#registration-form-container {
+    width: 30%;
+    margin: 0 auto;
+}
