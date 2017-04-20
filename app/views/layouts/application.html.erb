@@ -10,9 +10,9 @@
 
 <nav>
 <div class="nav-wrapper">
-<% if user_signed_in? %>
 <ul id="nav-mobile" class="hide-on-med-and-down">
-<li class="spacer">Coding Apprentices</li>
+<li class="spacer"><strong>Get Into Tech</strong></li>
+<% if user_signed_in? %>
 <li class="spacer">Logged in as <%= current_user.email %></li>
   <li class="spacer"><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
   <li class="spacer"><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>

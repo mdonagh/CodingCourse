@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/question/:id' => 'question#show'
   post '/questions' => 'question#answer'
 
-  root :to => "question#show", :id => '1'
+  root :to => "frontpage#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
