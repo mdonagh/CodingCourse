@@ -33,6 +33,7 @@ gem 'materialize-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'rails_12factor', group: :production
 
 gem 'devise'
 group :development, :test do
