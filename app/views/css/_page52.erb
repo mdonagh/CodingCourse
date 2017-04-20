@@ -1,0 +1,14 @@
+<p>Choose your favorite webpage and try to reproduce the basic layout of its frontpage using CSS.</p>
+<p>Don't obsess over fonts or anything, just get the general layout using inline-block boxes</p>
+
+<p>Generally, it should be something like this</p>
+<div class="code_block">
+<%= "<style>" %>
+#left_box{
+	display:inline-block;
+	height: 300px;
+}
+<%= "</style>" %>
+<%= '<div id="container">' %>
+<%= '<div id="left_box">' %>	
+</div>

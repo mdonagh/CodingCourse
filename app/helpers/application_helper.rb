@@ -1,12 +1,12 @@
 module ApplicationHelper
 	def getSectionName(question_id)
-		puts 'hokkaido'
-		puts question_id
 		case question_id.to_i
 		when 1..27
 		  return 'basics'
-		when 28..50
+		when 28..46
 		  return 'data-structures'
+  		when 47..52
+		  return 'css'
 		else
 		  return "unknown-question-id"
 		end

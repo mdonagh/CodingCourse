@@ -1,0 +1,25 @@
+<p>CSS or Cascading Styling Sheets applies fonts, colors, formatting, layout, etc. to your HTML elements. .</p>
+
+<p>You use CSS by attaching a stylesheet to your page. Stylesheets look like this</p>
+
+<div class="code_block">
+<%= "<head>" %>
+<%= "<style>" %>
+.classy_class
+{
+background-color:red;
+}
+#my_favorite_div
+{
+font-height:200%;
+}
+<%= "</style>" %>
+<%= "</head>" %>
+</div>
+
+<p>This will make the elements with class="classy_class" red, and double the height of the header h1. Notice that classes are represented by <b>periods</b>, and id’s by <b>hashtags</b>.</p>
+
+<p>You can also include a stylesheet as its own file</p>
+<div class="code_block">
+<%= '<link rel="stylesheet" href="styles.css">' %>
+</div>
