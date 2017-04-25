@@ -1,0 +1,23 @@
+Check out this little program:
+
+<div class="code_block">
+
+<%= '<input type="text" id="name">' %>
+<%= '<button id="get_length">Get Length</button>' %>
+<%= '<h4>String Length</h4>' %>
+<%= '<div id="show_length></div>' %>
+<%= '<script>' %>
+$( document ).ready(function() {
+$( '#get_length' ).click(function() {
+var length = $( '#name' ).val().length;
+$( '#show_length' ).text(length);
+});
+});
+<%= '</script>' %>
+</div>
+
+<p>$( document ).ready means that this script will start when the pages DOM, or Document Object Model, has finished loading.</p>
+<p>JQuery can be divided into getters and setters - you're either getting a value or setting a value</p>
+<p>$( '#getLength' ) GETS the div with the ID of getLength - notice the hashtag</p>
+<p>the .click() is an EVENT LISTENER. It will watch for when the user clicks the div, and then it will execute the code block. These nameless functions are a way of chaining together a block of code.</p>
+<p>.val() gets the value of the #name div. .text() then writes the text to the show_length div.</p>

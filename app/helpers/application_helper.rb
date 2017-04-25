@@ -7,6 +7,8 @@ module ApplicationHelper
 		  return 'data-structures'
   		when 47..52
 		  return 'css'
+	  	when 54..58
+		  return 'jquery'
 		else
 		  return "unknown-question-id"
 		end
