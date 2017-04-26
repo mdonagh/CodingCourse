@@ -9,6 +9,8 @@ module ApplicationHelper
 		  return 'css'
 	  	when 54..64
 		  return 'jquery'
+	 	when 65..75
+		  return 'json'  
 		else
 		  return "unknown-question-id"
 		end

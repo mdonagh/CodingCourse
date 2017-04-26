@@ -1,0 +1,15 @@
+<p>This <a href="https://swapi.co/">Star Wars API</a> lets you get information about Star Wars - just GET to the different URLs on this site and you can get information AS JSON back about Star Wars.</p>
+
+<div class="code_block">
+<%= '<html>' %>
+<%= '<body>' %>
+<%= '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>' %>
+<%= '<script>' %>
+<%= '$.get( "http://swapi.co/api/people/1", function( data ) {
+  console.log(data);' %>
+<%= '});' %>
+<%= '</script>' %>
+<%= '</body>' %>
+<%= '</html>' %>
+</div>
+<p>This program uses JQuery to GET a response from the Star Wars API. Right click, inspect, and go to the Google Chrome console, and you'll be easily look at what's inside the JSON object.</p>
