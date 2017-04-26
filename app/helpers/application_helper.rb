@@ -5,7 +5,7 @@ module ApplicationHelper
 		  return 'basics'
 		when 28..46
 		  return 'data-structures'
-  		when 47..52
+  		when 47..53
 		  return 'css'
 	  	when 54..64
 		  return 'jquery'
